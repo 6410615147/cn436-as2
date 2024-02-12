@@ -15,12 +15,11 @@ struct SlideNumberModel<BlockContentType: Equatable> {
     
     init(total: Int ,blockContentFactory: (Int) -> BlockContentType){
         blocks = []
-        orderedBlocks = []
         for index in 0..<total {
             let content = blockContentFactory(index)
             blocks.append(Block(content: content, isSpace: index == total-1 ? true : false))
-            orderedBlocks.append(Block(content: content, isSpace: index == total-1 ? true : false))
         }
+        orderedBlocks = blocks
         freeSpaceBlock = blocks[total-1]
         shuffle()
     }
@@ -47,15 +46,11 @@ struct SlideNumberModel<BlockContentType: Equatable> {
             blocks[index(of: freeSpaceBlock)] = block
             blocks[chosenIndex] = freeSpaceBlock
         }
-//        1,2,5     2,1,3,6         3,2,4,7         4,3,8
-//        5,6,1,9   6,5,7,2,10      7,6,8,3,11      8,7,4,12
-//        9,10,5,13 10,9,11,6,14    11,10,12,7,15   12,11,8,16
-//        13,14,9   14,13,15,10     15,14,16,11     16,15,12
-        print(count)
-        print("huh")
         count += 1
-        isOrder()
         aroundFreeSpaceMoveable()
+        if isOrder() {
+            imMovable()
+        }
     }
     
     private mutating func imMovable() {
@@ -63,8 +58,6 @@ struct SlideNumberModel<BlockContentType: Equatable> {
             blocks[i].isMoveable = false
         }
     }
-    
-    
     
     private mutating func aroundFreeSpaceMoveable() {
         imMovable()
@@ -88,21 +81,20 @@ struct SlideNumberModel<BlockContentType: Equatable> {
             }
         }
         freeSpaceBlock.isMoveable = true
-        print("2")
     }
     
     mutating func shuffle() {
         blocks.shuffle()
+        count = 0;
         aroundFreeSpaceMoveable()
     }
     
-    func isOrder() {
-        print("isorder")
-        if blocks.elementsEqual(orderedBlocks){
-            print("end")
+    func isOrder() -> Bool {
+        var blocksContent = blocks.map{$0.content}
+        var orderedBlocksContent = orderedBlocks.map{$0.content}
+        if blocksContent == orderedBlocksContent {
+            return true
         }
+        return false
     }
-
-    
-//    method slide, isorder(end)
 }

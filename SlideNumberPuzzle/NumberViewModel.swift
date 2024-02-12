@@ -22,6 +22,10 @@ class NumberViewModel: ObservableObject {
         return model.count
     }
     
+    var isOrder: Bool {
+        return model.isOrder()
+    }
+    
     func shuffle() {
         model.shuffle()
     }
@@ -29,4 +33,8 @@ class NumberViewModel: ObservableObject {
     func choose(_ block: SlideNumberModel<String>.Block) {
         model.choose(block: block)
     }
+//    
+//    func isOrder() -> Bool {
+//        return model.isOrder()
+//    }
 }
