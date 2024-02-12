@@ -2,7 +2,7 @@
 //  SlideNumberPuzzleApp.swift
 //  SlideNumberPuzzle
 //
-//  Created by นางสาวสุภาพันธ์ หง่อสกุล on 12/2/2567 BE.
+//  Created by นางสาวสุภาพันธ์ หง่อสกุล on 10/2/2567 BE.
 //
 
 import SwiftUI

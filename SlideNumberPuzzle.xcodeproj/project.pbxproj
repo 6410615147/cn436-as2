@@ -14,6 +14,9 @@
 		FDC2E3962B7A0D0400846A1C /* SlideNumberPuzzleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC2E3952B7A0D0400846A1C /* SlideNumberPuzzleTests.swift */; };
 		FDC2E3A02B7A0D0400846A1C /* SlideNumberPuzzleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC2E39F2B7A0D0400846A1C /* SlideNumberPuzzleUITests.swift */; };
 		FDC2E3A22B7A0D0500846A1C /* SlideNumberPuzzleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC2E3A12B7A0D0500846A1C /* SlideNumberPuzzleUITestsLaunchTests.swift */; };
+		FDC2E3AF2B7A0E3F00846A1C /* SlideNumberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC2E3AE2B7A0E3F00846A1C /* SlideNumberModel.swift */; };
+		FDC2E3B12B7A0E8F00846A1C /* AspectVGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC2E3B02B7A0E8F00846A1C /* AspectVGrid.swift */; };
+		FDC2E3B32B7A0EFE00846A1C /* NumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC2E3B22B7A0EFE00846A1C /* NumberViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,9 @@
 		FDC2E39B2B7A0D0400846A1C /* SlideNumberPuzzleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlideNumberPuzzleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDC2E39F2B7A0D0400846A1C /* SlideNumberPuzzleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideNumberPuzzleUITests.swift; sourceTree = "<group>"; };
 		FDC2E3A12B7A0D0500846A1C /* SlideNumberPuzzleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideNumberPuzzleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FDC2E3AE2B7A0E3F00846A1C /* SlideNumberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideNumberModel.swift; sourceTree = "<group>"; };
+		FDC2E3B02B7A0E8F00846A1C /* AspectVGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectVGrid.swift; sourceTree = "<group>"; };
+		FDC2E3B22B7A0EFE00846A1C /* NumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +106,9 @@
 				FDC2E3872B7A0D0300846A1C /* Assets.xcassets */,
 				FDC2E3892B7A0D0300846A1C /* SlideNumberPuzzle.entitlements */,
 				FDC2E38A2B7A0D0300846A1C /* Preview Content */,
+				FDC2E3AE2B7A0E3F00846A1C /* SlideNumberModel.swift */,
+				FDC2E3B02B7A0E8F00846A1C /* AspectVGrid.swift */,
+				FDC2E3B22B7A0EFE00846A1C /* NumberViewModel.swift */,
 			);
 			path = SlideNumberPuzzle;
 			sourceTree = "<group>";
@@ -259,8 +268,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDC2E3B12B7A0E8F00846A1C /* AspectVGrid.swift in Sources */,
 				FDC2E3862B7A0CCA00846A1C /* ContentView.swift in Sources */,
+				FDC2E3AF2B7A0E3F00846A1C /* SlideNumberModel.swift in Sources */,
 				FDC2E3842B7A0CC900846A1C /* SlideNumberPuzzleApp.swift in Sources */,
+				FDC2E3B32B7A0EFE00846A1C /* NumberViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
