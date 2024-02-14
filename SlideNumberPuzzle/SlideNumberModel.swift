@@ -45,8 +45,8 @@ struct SlideNumberModel<BlockContentType: Equatable> {
         if block.isMoveable {
             blocks[index(of: freeSpaceBlock)] = block
             blocks[chosenIndex] = freeSpaceBlock
+            count += 1
         }
-        count += 1
         aroundFreeSpaceMoveable()
         if isOrder() {
             imMovable()
@@ -90,8 +90,8 @@ struct SlideNumberModel<BlockContentType: Equatable> {
     }
     
     func isOrder() -> Bool {
-        var blocksContent = blocks.map{$0.content}
-        var orderedBlocksContent = orderedBlocks.map{$0.content}
+        let blocksContent = blocks.map{$0.content}
+        let orderedBlocksContent = orderedBlocks.map{$0.content}
         if blocksContent == orderedBlocksContent {
             return true
         }

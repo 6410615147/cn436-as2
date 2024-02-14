@@ -29,7 +29,7 @@ struct ContentView: View {
         ZStack {
             Image("bg")
                 .resizable()
-                .scaledToFill()
+//                .scaledToFill()
                 .edgesIgnoringSafeArea(.all)
             
             VStack {
