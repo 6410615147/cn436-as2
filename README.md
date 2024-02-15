@@ -11,6 +11,6 @@
 -  เมื่อผู้เล่นทำการเรียงตัวเลขสำเร็จ เกมจะจบลงโดยมี pop-up บอกจำนวน move ทั้งหมด และปุ่มเริ่มเกมใหม่\
 ![End Game](./Images/EndGame.png "End Game")
    
-Click [here](https://drive.google.com/file/d/1S9ZvX1F8HQ2TQVEIOrXdZrKpGkX0XQnp/view?usp=sharing) for clip demo.
+Click [here](https://youtu.be/3cOZXqj7PHY) for clip demo.
 
 **สุภาพันธ์ หง่อสกุล 6410615147**
